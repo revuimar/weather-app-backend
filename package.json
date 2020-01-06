@@ -1,0 +1,28 @@
+{
+  "name": "weather-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.0",
+    "express-session": "^1.17.0",
+    "node-cron": "^2.0.3",
+    "openweather-apis": "^4.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^7.14.0",
+    "request": "^2.88.0",
+    "uuid": "^3.3.3"
+  }
+}

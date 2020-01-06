@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+${partial}
+<form action="/join" method="POST">
+<input type="text" name="login"   placeholder="Login"><br>
+<input type="text" name="email" class="form-control"  placeholder="Email"><br>
+<input type="password"  name="password" class="form-control"  placeholder="Password"><br>
+<input type="checkbox" name="remember" placeholder="Remember me"><br>
+<button type='submit'>Join in</button><br>
+</form>
+<a href='/login'> Already have an account? Sign in.</a>
+</body>
+</html>

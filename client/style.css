@@ -29,26 +29,21 @@ li a.active {
 }
 
 th, td, p {
-    font: 14px Verdana;
+    font: 14px Helvetica;
 }
 
 table, th, td {
     border: solid 1px;
-    border-collapse: collapse;
-    padding: 2px 3px;
+    padding: 2px 2px;
     text-align: center;
 }
 
-tr > td:last-child, tr > th:last-child {
+table > tr:last-child {
     background: #BFD5ED;
 }
 
-th {
-    font-weight: bold;
-}
-
 input:invalid {
-    border: 2px dashed red;
+    border: 2px dotted red;
 }
 
 input:valid {

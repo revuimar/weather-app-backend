@@ -32,6 +32,23 @@ pool.query(
     TABLESPACE pg_default;
     ALTER SEQUENCE public.stats_id_seq
         OWNER TO communicator;
+    
+    CREATE TABLE IF NOT EXISTS public.users
+    (
+        id uuid NOT NULL,
+        login character(64) COLLATE pg_catalog."default",
+        email character(128) COLLATE pg_catalog."default",
+        password character(60) COLLATE pg_catalog."default",
+        CONSTRAINT users_pkey PRIMARY KEY (id)
+    )
+    WITH (
+        OIDS = FALSE
+    )
+    TABLESPACE pg_default;
+    
+    ALTER TABLE public.users
+        OWNER to communicator;
+    
     `).then((res) => {
         console.log("succesful initialisation");
     //pool.end();
